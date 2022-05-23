@@ -1,8 +1,8 @@
+import {ROUTER_ON_LOCATION_CHANGED} from "@lagunovsky/redux-react-router";
 import {takeLatest, put, call, select} from 'redux-saga/effects';
 import {SET_LATEST_NEWS_ERROR, SET_LOADING_DATA, SET_POPULAR_NEWS_ERROR} from '../constants';
 import {getLatestNews, getPopularNews} from '../../api/index';
 import {setLatestNews, setPopularNews} from "../actions/action-creators";
-import {ROUTER_ON_LOCATION_CHANGED} from "@lagunovsky/redux-react-router";
 
 export function* handleLatestNews() {
     try {

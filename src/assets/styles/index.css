@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@400;600&family=Poppins:wght@400;600&display=swap");
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Halant", sans-serif;
+  font-weight: 400;
+  background: #171926;
+  min-height: 100vh;
+  color: #FFFFFF;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: 30px auto;
+}
+
+main .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+header {
+  min-height: 60px;
+}
+
+header {
+  background-color: #0F111D;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+}
+
+/*# sourceMappingURL=index.css.map */

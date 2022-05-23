@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Routes, Route} from "react-router-dom";
 import {Provider} from "react-redux";
+import { ReduxRouter } from '@lagunovsky/redux-react-router'
+
+import {history} from "./redux/reducers/index";
 import store from "./redux/store";
 import App from './App';
-import './index.css';
 import Home from "./pages/home";
 import LatestNews from "./pages/latest-news";
 import PopularNews from "./pages/popular-news";
-import {history} from "./redux/reducers/index";
-import { ReduxRouter } from '@lagunovsky/redux-react-router'
+
+import './assets/styles/index.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

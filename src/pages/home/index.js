@@ -1,7 +1,12 @@
+import {Link} from "react-router-dom";
+
+import './styles.scss';
+
 const Home = () => (
     <div className="wrapper">
-        <h1>News Application</h1>
-        <h3>Build with Redux-Saga, React, React Router</h3>
+        <Link to={'/latest-news'}>
+            <h1 className="main-title">Front-end news</h1>
+        </Link>
     </div>
 );
 

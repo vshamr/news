@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles.scss';
 
 const News = ({ news, title, error }) => {
     if (!news || news.length === 0) {
@@ -7,16 +7,16 @@ const News = ({ news, title, error }) => {
 
     return(
         <div>
-            <h2>{`${title}:`}</h2>
+            <h2 className="title">{`${title}:`}</h2>
             <ul className="news-list">
                 {news.map(({ objectID, url, title, points, num_comments, created_at, author}) => (
                     <li key={objectID} className="news">
                         <div className="description">
-                            <a href={url} className="news-title">{title || 'No title'}</a>
-                            <span className="text">{`${points || 0} points`}</span>
-                            <span className="comments">{`${num_comments || 0} comments`}</span>
-                            <span className="date">{new Date(created_at).toLocaleDateString()}</span>
-                            <span className="author">{author || 'no author'}</span>
+                            <a href={url} className="item-title">{title || 'No title'}</a>
+                            <span>{author || 'no author'}</span>
+                            <span>{`${points || 0} points`}</span>
+                            <span>{`${num_comments || 0} comments`}</span>
+                            <span>{new Date(created_at).toLocaleDateString()}</span>
                         </div>
                     </li>
                 ))}

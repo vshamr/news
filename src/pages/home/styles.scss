@@ -1,0 +1,12 @@
+@import '../../assets/styles/vars';
+
+.main-title {
+    font-family: $f-secondary;
+    font-weight: 600;
+    color: $c-white;
+    background-color: $c-pink;
+    margin: 0;
+    padding: 30px 90px;
+    border-radius: $border-radius;
+}
+
