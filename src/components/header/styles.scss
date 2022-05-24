@@ -1,0 +1,39 @@
+@import '../../assets/styles/vars';
+
+.nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .links {
+    height: 100%;
+  }
+
+  a {
+    font-family: $f-secondary;
+    font-weight: 400;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: $c-white;
+    text-decoration: none;
+    position: relative;
+  }
+}
+
+.active {
+  &::after {
+    content: '\25CF';
+    color: $c-pink;
+    font-size: 21px;
+    line-height: 1;
+    vertical-align: text-bottom;
+    position: absolute;
+    bottom: 0;
+    right: 45%;
+    transition: 0.1s;
+  }
+}

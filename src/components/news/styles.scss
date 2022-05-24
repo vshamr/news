@@ -1,0 +1,47 @@
+@import '../../assets/styles/vars';
+
+.title {
+  font-family: $f-secondary;
+  color: $c-white;
+  margin: 0 10px 25px;
+}
+
+.news-list {
+  margin: 0 10px;
+  padding: 0;
+  list-style-type: none;
+  flex: 1 0 100%;
+}
+
+.news {
+  width: 60vw;
+  margin: 10px 0;
+  padding: 15px 40px 15px 20px;
+  border-radius: $border-radius;
+  background-color: $c-white;
+
+  .item-title {
+    color: $c-black-font;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: $c-pink;
+    }
+  }
+}
+
+.description {
+  span {
+    font-size: 14px;
+    color: $c-grey-font;
+    padding-right: 10px;
+
+    &:not(:last-child) {
+      border-right: 1px solid $c-white;
+    }
+  }
+}
